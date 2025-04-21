@@ -97,34 +97,5 @@ class library:
             print(f"{returner} hasnt borrowed any book from the library")
     
 
-book = library()
-book.add_book({"name": "Things fall apart",
-               "count" : 6
-               })
-book.add_book({"name": "Rich dad poor dad",
-               "count" : 5
-               })
-book.add_book({"name": "Things fall apart",
-               "count" : 6
-               })
-
-print(book.borrow_book({"borrower": "Samson", "name" : "Rich dad poor dad", "count": 2}))
-print(book.borrow_book({"borrower": "Temitope", "name" : "Rich dad poor dad", "count": 1}))
-print(book.borrow_book({"borrower": "Samson", "name" : "Things fall apart", "count": 1}))
-print(book.borrow_book({"borrower": "Samson", "name" : "Rich dad poor dad", "count": 1}))
-print(book.borrow_book({"borrower": "Temitope", "name" : "Things fall apart", "count": 5}))
-print(book.borrow_book({"borrower": "Ade", "name" : "Things fall apart", "count": 5}))
-print(f"SHELF ITEMS: { book.display_shelf()}")
-
-print("BORROWED BOOKS AS FOLLOWS")
-book.borrowed_books()
-# print(book.borrow_book({"borrower": "Samson", "name" : "Things fall apart", "count": 1}))
-print("RETURNERSSSSS")
-print(book.return_book({"returner": "Ade", "name" : "Things fall apart", "count": 3}))
-print(book.return_book({"returner": "Ade", "name" : "Things fall apart", "count": 2}))
-
-print("BORROWED BOOKS AS FOLLOWS")
-book.borrowed_books()
-
 
 
